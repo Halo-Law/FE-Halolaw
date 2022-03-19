@@ -98,18 +98,18 @@ function Kategori(){
             </div>
             <div className="mb-[36px] lg:mb-[72px]">
                 <div className="grid grid-cols-2 lg:grid-cols-3 mx-[25px] lg:mx-[100px] gap-3 lg:gap-[32px]">
-                {Kategori.map((index) => {
+                {Kategori.map((data, index) => {
                     return(
-                       <Link href={"/kategori/" + index.judul}>
+                       <Link href={"/kategori/" + data.judul} key={key}>
                             <div className="flex justify-center">
                                 <div className="flex flex-col justify-around lg:justify-between bg-[#FCFCFC] border hover:border-1 lg:hover:border-2 hover:border-blue-600 shadow-[0_4px_10px_0px_rgba(0,0,0,0.1)] w-full lg:w-[420px] h-full lg:h-[236px] p-3 lg:p-[24px]">
                                     <div className="w-[28px] h-[28px] lg:w-[56px] lg:h-[56px]">
-                                        <img src={`./icon/${index.logo}`} alt=""></img>
+                                        <img src={`./icon/${data.logo}`} alt=""></img>
                                     </div>
                                     <div>
                                         <h4 className="text-[12px] lg:text-[22px] font-semibold tracking-[0.5px] text-[#344054] mb-0 lg:mb-[16px]">{index.judul}</h4>
                                         <p className="text-[10px] lg:text-[16px] text-[#475467]">
-                                            {index.deksripsi}
+                                            {data.deksripsi}
                                         </p>
                                     </div>
                                 </div>
