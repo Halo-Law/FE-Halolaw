@@ -1,5 +1,5 @@
 import HomeIcon from '@mui/icons-material/Home';
-import Link from "next/Link"
+import Link from "next/link"
 import { useRouter } from 'next/router';
 
 function Dokumen(){

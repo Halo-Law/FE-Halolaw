@@ -1,6 +1,6 @@
 import react, {useState} from "react";
 import SearchIcon from '@mui/icons-material/Search';
-import Link from "next/Link"
+import Link from "next/link"
 
 function Kategori(){
     function DummySearch(e) {
