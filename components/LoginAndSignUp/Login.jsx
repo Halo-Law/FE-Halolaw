@@ -27,7 +27,7 @@ function Login(){
                         <div className="flex justify-between items-center">
                             <div className="flex">
                                 <input id="remember_me" name="remember_me" type="checkbox" className="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded"></input>
-                                <label for="remember_me" className="ml-2 block text-sm text-gray-800">Remember me</label>
+                                <label className="ml-2 block text-sm text-gray-800">Remember me</label>
                             </div>
                             <a href="#" className="font-[600] text-sm text-gray-800">Lupa Password ?</a>
                             
