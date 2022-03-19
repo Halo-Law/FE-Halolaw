@@ -100,7 +100,7 @@ function Kategori(){
                 <div className="grid grid-cols-2 lg:grid-cols-3 mx-[25px] lg:mx-[100px] gap-3 lg:gap-[32px]">
                 {Kategori.map((data, index) => {
                     return(
-                       <Link href={"/kategori/" + data.judul} key={key}>
+                       <Link href={"/kategori/" + data.judul} key={index}>
                             <div className="flex justify-center">
                                 <div className="flex flex-col justify-around lg:justify-between bg-[#FCFCFC] border hover:border-1 lg:hover:border-2 hover:border-blue-600 shadow-[0_4px_10px_0px_rgba(0,0,0,0.1)] w-full lg:w-[420px] h-full lg:h-[236px] p-3 lg:p-[24px]">
                                     <div className="w-[28px] h-[28px] lg:w-[56px] lg:h-[56px]">
