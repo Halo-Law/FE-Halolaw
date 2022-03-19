@@ -82,8 +82,8 @@ function Kategori(){
                     <h4 className="text-[11px] lg:text-[33px] leading-0 lg:leading-[40px] font-[700]">Pembuatan Dokumen Hukum</h4>
                     <p className="text-[8px] lg:text-[14px] leading-0 lg:leading-[140%] font-[500]">Tersedia pembuatan dokumen hukum yang lengkap dan terpercaya</p>
                 </div>
-                <div class="">
-                    <div class="flex h-[36px] lg:h-[48px]">
+                <div className="">
+                    <div className="flex h-[36px] lg:h-[48px]">
                         <div className="h-full bg-white flex items-center justify-center rounded-[4px] rounded-r-none pl-3 lg:pl-[20px] pr-3 lg:pr-[16px]" onClick={DummySearch}>
                             <SearchIcon className="text-[#6982F1] md:text-[22px] text-[12px]"/>
                         </div>

@@ -94,7 +94,7 @@ function Dokumen(){
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-[24px] mt-[24px] lg:mt-[48px]">
                     {dokumen.map((data,index) => {
                         return (
-                            <Link href={`/kategori/${router.query.dokumen}/tanah`}>
+                            <Link href={`/kategori/${router.query.dokumen}/tanah`} key={index}>
                                 <div className="flex justify-center">
                                     <div className="rounded-[8px] border hover:border-2 hover:border-blue-600 w-full lg:w-[291px] h-auto lg:h-[304px] bg-white p-[8px] lg:p-[16px] flex flex-col justify-between">
                                         <div className={`w-auto h-[100px] lg:w-[259px] lg:h-[200px] flex justify-center`}>
