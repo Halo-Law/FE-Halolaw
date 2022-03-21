@@ -73,8 +73,8 @@ function Kategori(){
     return(
         <div className="">
             <div className="relative">
-                <div className="absolute -z-10">
-                    <img src="./kategori/Header.svg" className="w-[250vh] object-fill"></img>
+                <div className="absolute -z-10 bg-[url('/kategori/Header.svg')] h-[150px] lg:h-[300px] w-full bg-no-repeat bg-cover">
+                    {/* <img src="./kategori/Header.svg" className="w-[250vh] object-fill"></img> */}
                 </div>
             </div>
             <div className="mx-[25px] lg:mx-[100px] pt-3 lg:pt-[48px] pb-3 lg:pb-[40px]">

@@ -95,7 +95,7 @@ function Homepage(){
                 <h4 className="text-[22px] lg:text-[33px] font-[500] leading-5 lg:leading-[40px] text-[#1D2939] tracking-[0.25px]">Pelayanan Dokumen Hukum</h4>
                 <p className="text-[12px] lg:text-[16px] font-[400] text-[#667085] leading-5 lg:leading-[24px] tracking-[0.5px]">Kami hadir untuk masyarakat Indonesia dalam melakukan proses legalisasi yang terkadang rumit</p>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 mx-[0px] lg:mx-[60px] gap-[16px] lg:gap-[32px]">
+            <div className="grid grid-cols-2 xl:grid-cols-4 mx-[0px] lg:mx-[60px] gap-[16px] lg:gap-[32px]">
                 <div className="flex justify-center">
                     <div className="flex flex-col lg:justify-between bg-[#FCFCFC] border shadow-[0_18px_58px_16px_rgba(0,0,0,0.06)] w-full lg:w-[256px] h-auto lg:h-[278px] p-[12px] lg:p-[24px] hover:border hover:border-blue-700 cursor-pointer">
                         <div className="w-[32px] h-[32px] lg:w-[64px] lg:h-[64px]">
@@ -161,15 +161,15 @@ function Homepage(){
         </div>
         {/* SECTION FOUR */}
         <div className="font-['Inter']">
-            <div className="flex mx-[25px] lg:mx-[100px] my-[80px] justify-between">
-                <div className="hidden lg:block w-[531px] h-[363px]">
+            <div className="flex mx-[25px] lg:mx-[100px] my-[80px] justify-center xl:justify-between">
+                <div className="hidden xl:block w-[531px] h-[363px]">
                     <img className="object-cover h-full" src="./home/praktisi.jpg" alt="praktisi"></img>
                 </div>
                 <div className="grid content-center">
                     <div className="w-full lg:w-[609px]">
                         <h4 className="text-[#1D2939] font-medium text-[23px] lg:text-[33px] text-center lg:text-left">Berpengalaman di dunia Hukum</h4>
                         <p className="tracking-[0.5px] text-[#667085] my-3 lg:my-[24px] text-[12px] lg:text-[15px] text-center lg:text-left">Kami bekerjasama dengan para praktisi hukum di Indonesia untuk membantu anda dalam menyelesaikan segala bentuk keperluan hukum pada bidang surat menyurat dan legalisasi </p>
-                        <div className="flex space-x-[8px] lg:space-x-[32px]">
+                        <div className="flex justify-center lg:justify-start space-x-[8px] lg:space-x-[32px]">
                             <div className="flex border rounded-[4px] w-[100px] lg:w-[140px] h-[100px] lg:h-[140px]">
                                 <div className="my-[18px] lg:my-[18px] mx-auto text-center flex flex-col justify-between">
                                     <h3 className="text-[#1D2939] text-[25px] lg:text-[47px] leading-none mb-[8px]">5+</h3>
@@ -196,7 +196,7 @@ function Homepage(){
         </div>
         {/* SECTION FIVE BELUM */}
         <div className="my-[60px]">
-            <div className="flex font-['Inter'] mx-[25px] lg:mx-[100px] justify-between">
+            <div className="flex font-['Inter'] mx-[25px] lg:mx-[100px] justify-center xl:justify-between">
                 <div className="grid content-center">
                     <div className="w-auto lg:w-[609px]">
                         <h4 className="text-center lg:text-left font-[500] text-[22px] lg:text-[33px] leading-8 lg:leading-[40px] tracking-[0.25px] mb-6 lg:mb-[24px]">Kami siap membantu anda</h4>
@@ -218,7 +218,7 @@ function Homepage(){
                     </div> 
                 </div>
                 <div>
-                    <img src="./home/customer@2x.png" className="w-[531px] hidden md:block" alt="foto"></img>
+                    <img src="./home/customer@2x.png" className="w-[531px] hidden xl:block" alt="foto"></img>
                 </div>
             </div>
         </div>

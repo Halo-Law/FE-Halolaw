@@ -42,7 +42,7 @@ function Login(){
                     <p className="text-sm mt-[40px]">Belum memiliki akun? <Link href="/daftar"><span className="text-[#2A41C7] font-[600] cursor-pointer">Daftar</span></Link></p>
                 </div>
             </div>
-            <div className="hidden lg:block w-1/2 h-screen bg-[url('/login.png')] bg-cover">
+            <div className="hidden lg:block w-1/2 h-screen bg-[url('/Login.png')] bg-cover">
             </div>
         </div>   
     )

@@ -51,7 +51,8 @@ function Navbar(){
                                 <div className="p-[8px] lg:p-[16px] space-y-[16px] ">
                                 <Menu.Item>
                                 {({ active }) => (
-                                    <a
+                                    <Link
+                                    href="/kategori"><a
                                     href="#"
                                     className={(
                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -59,7 +60,7 @@ function Navbar(){
                                     )}
                                     >
                                     Pembuatan Dokumen
-                                    </a>
+                                    </a></Link>
                                 )}
                                 </Menu.Item>
                                 <Menu.Item>
