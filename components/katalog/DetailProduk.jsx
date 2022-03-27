@@ -6,7 +6,7 @@ export default function DetailProduk() {
         <div className=''>
             <div>
                 <div className="relative">
-                    <div className="absolute -z-10 bg-gradient-to-r from-[#3D8DFF] to-[#2A41C7] h-[200px] lg:h-[212px] w-full">
+                    <div className="absolute -z-10 bg-gradient-to-r from-[#3D8DFF] to-[#2A41C7] h-[140px] md:h-[160px] lg:h-[170px] xl:h-[212px] w-full">
                         
                     </div>
                 </div>
@@ -21,26 +21,6 @@ export default function DetailProduk() {
                     </p>
                     </div>
                     <h3 className="font-['Inter'] text-[30px] md:text-[47px] font-[600] pt-6">Sertifikat Tanah</h3>
-                </div>     
-                <div className='bg-white border shadow-[0px_4px_10px_rgba(0,0,0,0.25)] static xl:absolute top-[160px] right-0 w-auto md:w-[336px] mx-0 md:mr-[61px]'>
-                    <div className='bg-[#E4E7EC]'>
-                        <h5 className='py-4 px-6 font-bold text-[23px] text-[#1D2939]'>Pemesanan</h5>
-                    </div>
-                    <div className='p-6 text-[14px] text-[#1D2939]'>
-                        <div className='space-y-[8px] mb-8'>
-                            <p className='text-[#667085] font-bold'>Mulai dari</p>
-                            <h4 className='text-[#2A41C7] text-[33px] font-bold'>Rp700.000</h4>
-                        </div>
-                        <div className='space-y-[20px]'>
-                            <p className='font-[500]'>Anda dapat melakukan konsultasi secara gratis sebelum memesan dokumen legalitas ini.</p>
-                            <p><a href='#' className='text-[#3A57E8] font-[600]'>Jadwalkan Kosultasi →</a></p>
-                            <p>Pesan sekarang untuk dapat mengurus dokumen legalitas ini.</p>
-                        </div>
-                        
-                    </div>
-                    <div>
-                        <button className='bg-[#3A57E8] w-full text-white py-6 font-[700]'>Pesan Sekarang</button>
-                    </div>
                 </div>
                 <div className="font-['Open Sans'] w-auto lg:w-[713px] text-left lg:text-justify text-[#475467] pt-5 pb-12">
                     <div className="text-[16px] leading-[32px] tracking-[0.5px]">
@@ -71,6 +51,26 @@ export default function DetailProduk() {
                         </div><br/>
                         <h5 className="text-[23px] font-bold text-[#1D2939]">Pertanyaan</h5>
                         <p>Bila Anda memiliki pertanyaan / kendala dalam melakukan transaksi menggunakan Halo Law, Anda dapat membaca pertanyaan-pertanyaan yang sering diajukan di <a href="#" className="text-blue-500">FAQ</a></p>
+                    </div>
+                </div>
+                <div className='bg-white border shadow-[0px_4px_10px_rgba(0,0,0,0.25)] static xl:absolute top-[160px] right-0 w-auto md:w-[336px] mx-0 md:mr-[61px] mb-5'>
+                    <div className='bg-[#E4E7EC]'>
+                        <h5 className='py-4 px-6 font-bold text-[23px] text-[#1D2939]'>Pemesanan</h5>
+                    </div>
+                    <div className='p-6 text-[14px] text-[#1D2939]'>
+                        <div className='space-y-[8px] mb-8'>
+                            <p className='text-[#667085] font-bold'>Mulai dari</p>
+                            <h4 className='text-[#2A41C7] text-[33px] font-bold'>Rp700.000</h4>
+                        </div>
+                        <div className='space-y-[20px]'>
+                            <p className='font-[500]'>Anda dapat melakukan konsultasi secara gratis sebelum memesan dokumen legalitas ini.</p>
+                            <p><a href='#' className='text-[#3A57E8] font-[600]'>Jadwalkan Kosultasi →</a></p>
+                            <p>Pesan sekarang untuk dapat mengurus dokumen legalitas ini.</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <button className='bg-[#3A57E8] w-full text-white py-6 font-[700]'>Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
