@@ -97,6 +97,7 @@ export default function Checkout(){
                                     styles={customStyles}
                                     placeholder={'--Pilih--'}
                                     maxMenuHeight={250}
+                                    isSearchable={false}
                                 />
                             </div>
                             {/* <select className='w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-4'>
