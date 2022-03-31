@@ -7,7 +7,7 @@ function SignUp(){
     const router = useRouter()
     const handleDaftar = (e) => {
         e.preventDefault()
-        router.push('/login')
+        router.push('/')
     }
     return(
         <div className="flex w-screen h-auto font-['Inter']">

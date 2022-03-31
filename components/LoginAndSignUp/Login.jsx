@@ -29,7 +29,7 @@ function Login(){
                                 <input id="remember_me" name="remember_me" type="checkbox" className="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded"></input>
                                 <label className="ml-2 block text-sm text-gray-800">Remember me</label>
                             </div>
-                            <a href="#" className="font-[600] text-sm text-gray-800">Lupa Password ?</a>
+                            <Link href="LupaPassword"><a href="#" className="font-[600] text-sm text-gray-800">Lupa Password ?</a></Link>
                             
                         </div>
                         <div className="pt-[40px] pb-4">
