@@ -1,4 +1,5 @@
 import HomeIcon from '@mui/icons-material/Home';
+import Link from 'next/link'
 
 export default function DetailProduk() {
     const PageName = "Sertifikat Tanah"
@@ -14,10 +15,12 @@ export default function DetailProduk() {
             <div className='mx-[25px] lg:mx-[100px] relative'>
                 <div className='pt-8 pb-[10px] xl:pb-[80px] text-white'>
                     <div className='text-[11px] md:text-[14px]'>
-                    <p><a href="#" className=""><HomeIcon className="mb-1 scale-[0.7]"/>Home</a>
+                    <p><Link href="/"><a href="#" className=""><HomeIcon className="mb-1 scale-[0.7]"/>Home</a></Link>
                     /
-                    <a href="#">Pembuatan Dokumen</a>
-                    /Properti/{PageName}
+                    <Link href='/kategori'><a href="#">Pembuatan Dokumen</a></Link>
+                    /
+                    <Link href='/kategori/Properti'><a href="#">Properti</a></Link>
+                    /{PageName}
                     </p>
                     </div>
                     <h3 className="font-['Inter'] text-[30px] md:text-[47px] font-[600] pt-6">Sertifikat Tanah</h3>
@@ -70,7 +73,7 @@ export default function DetailProduk() {
                         
                     </div>
                     <div>
-                        <button className='bg-[#3A57E8] w-full text-white py-6 font-[700]'>Pesan Sekarang</button>
+                    <Link href='/checkout'><a><button className='bg-[#3A57E8] w-full text-white py-6 font-[700]'>Pesan Sekarang</button></a></Link>
                     </div>
                 </div>
             </div>
