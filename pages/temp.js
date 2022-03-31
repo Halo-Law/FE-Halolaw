@@ -1,14 +1,16 @@
 import react from "react";
 
+import Navbar from "../components/header/Navbar"
+import Footer from "../components/footer/Footer"
+import ReservasiKonsultasi from "../components/katalog/ReservasiKonsultasi";
+
 function temp(){
     return (
         <div>
-            <div className="relative">
-                <div className="absolute bg-[url('/kategori/Header.svg')] h-[300px] w-full bg-no-repeat bg-cover">
-                    {/* <img src="./kategori/Header.svg" className="w-[250vh] object-fill"></img> */}
-                </div>
-            </div>
-        </div>
+        <Navbar/>
+        <ReservasiKonsultasi/>
+        <Footer />
+        </div> 
     )
 }
 

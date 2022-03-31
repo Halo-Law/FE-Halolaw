@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-function ForgotPassword02() {
-    const email = "fariziandira@gmail.com"
+function ForgotPassword02(props) {
+    const email = props.email
 
     return(
-        <div className="font-['Inter'] mt-20">
-            <div className="w-[385px] mx-auto text-center flex flex-col justify-center bg-white">
+        <div className="font-['Inter'] mt-20 mx-3 lg:mx-0">
+            <div className="w-auto sm:w-[385px] mx-auto text-center flex flex-col justify-center bg-white">
                 <div className="flex justify-center mx-auto h-[56px] mb-[16px]">
                     <img src="/lupaPassword/rst-mail.svg"/>
                 </div>
