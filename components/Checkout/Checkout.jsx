@@ -1,9 +1,11 @@
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Select from 'react-select'
 import axios from 'axios';
 
 export default function Checkout(){
+    const router = useRouter()
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     const customStyles = {
@@ -60,7 +62,7 @@ export default function Checkout(){
     return(
         <div className='block lg:flex lg:justify-center ml-6 md:ml-[50px] lg:ml-0 mr-6 md:mr-[50px] lg:mr-[100px] mt-[60px]'>
             <div className='mr-[40px] xl:mr-[86px] mb-5 xl:mb-0'>
-                <button className='flex justify-center bg-[#F2F4F7] px-6 py-[6px] rounded-[8px] w-[128px]'>
+                <button className='flex justify-center bg-[#F2F4F7] px-6 py-[6px] rounded-[8px] w-[128px]' onClick={() => {router.back()}}>
                     <ArrowBackIcon/> <span className='pl-2'>Kembali</span>
                 </button>
             </div>
@@ -152,7 +154,7 @@ export default function Checkout(){
                         </div>
                     </div>
                     <div className='text-center bg-[#3A57E8]'>
-                        <button className='text-white text-[16px] font-[700] leading-[20px] tracking-[0.15px] py-6'>
+                        <button className='text-white text-[16px] font-[700] leading-[20px] tracking-[0.15px] py-6' onClick={() => {router.push('/CheckoutSucces')}}>
                             Checkout
                         </button>
                     </div>
