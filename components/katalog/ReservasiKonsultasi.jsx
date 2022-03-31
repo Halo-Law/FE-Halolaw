@@ -1,8 +1,11 @@
 import HomeIcon from '@mui/icons-material/Home';
-import Link from "next/link"
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useRouter } from 'next/router';
+import Link from "next/link"
 
 function ReservasiKonsultasi(){
+    const bidang = ["Properti", "HAKI", "Pendirian Perusahaan", "Kontrak Kerja","Penutupan Perusahaan","Pembuatan & Perubahan akta","Perizinan Usaha"]
+
     return(
         <div className='block'>
             <div className="relative">
@@ -23,39 +26,63 @@ function ReservasiKonsultasi(){
                     <p className="font-[700] text-[14px] lg:text-[33px] leading-0 lg:leading-[40px] tracking-[0.25px] text-left">Reservasi Konsultasi</p>
                 </div>
             </div>
-            <div>
-                <div className='grid grid-cols-2 pt-10'>
+            <div className='border-b pb-10'>
+                <div className='grid grid-cols-2 gap-[105px] pt-10 mx-[100px] text-[#1D2939]'>
                     <div>
-                        <div>
-                            <p>Kami senang anda berkonsultasi, data ini membantu kami untuk menghubungi Anda</p>
-                            <div className='flex'>
-                                <div className='flex flex-col'>
-                                    <label>Nama Lengkap</label>
-                                    <input type="text" placeholder='nama'/>
+                        <div className='text-[12px] text-[#475467] tracking-[0.4px] leading-[18px] font-semibold'>
+                            <div className='flex mb-6'>
+                                <div className='w-6 h-6 mr-2'>
+                                    <ArrowRightIcon/>
                                 </div>
-                                <div className='flex flex-col'>
-                                    <label>Pilih tanggal konsultasi *</label>
-                                    <input type="date"/>
+                                <p className='text-[14px] font-semibold leading-[20px] tracking-[0.25px]'>Kami senang anda berkonsultasi, data ini membantu kami untuk menghubungi Anda</p>
+                            </div>
+                            <div className='flex ml-8 gap-6'>
+                                <div className='flex flex-col w-full'>
+                                    <label>Nama Lengkap</label>
+                                    <input className=" w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-4" type="text" placeholder="nama lengkap anda"/>
+                                </div>
+                                <div className='flex flex-col w-full'>
+                                    <label>Pilih tanggal konsultasi <span>*</span></label>
+                                    <input className=" w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-4" type="date" />
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex ml-8 flex-col w-[45%]'>
                             <label>Nomor Telpon (WhatsApp) *</label>
-                            <input type="number" placeholder='081254'/>
+                            <input className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-4" type="number" placeholder='Misal: 082219546487'/>
                         </div>
                         <div>
-                            <p>Bidang mana yang perlu kami bantu? *</p>
+                            <div className='flex mb-6'>
+                                <div className='w-6 h-6 mr-2'>
+                                    <ArrowRightIcon/>
+                                </div>
+                                <p className='text-[14px] font-semibold leading-[20px] tracking-[0.25px]'>Bidang mana yang perlu kami bantu? *</p>
+                            </div>
+                            <div className='flex flex-wrap gap-[16px] ml-8'>
+                                {bidang.map((data) => (
+                                    <div className='bg-[#F2F4F7] py-3 px-4 rounded-[4px] gap-[8px]'>
+                                        <input type="checkbox" className='mr-[8px]'/>
+                                        <label>{data}</label>
+                                    </div>
+                                ))}
+                            </div>
+                            
                         </div>
                     </div>
                     <div>
                         <div>
-                            <p>Beri tahu kami bantuan apa yang Anda butuhkan dan masalah yang perlu diselesaikan</p>
-                            <div className='flex flex-col'>
-                                <label>Tuliskan detail permasalahan anda *</label>
-                                <textarea placeholder='Tuliskan detail permasalahan anda'></textarea>
+                            <div className='flex mb-6'>
+                                <div className='w-6 h-6 mr-2'>
+                                    <ArrowRightIcon/>
+                                </div>
+                                <p className='text-[14px] font-semibold leading-[20px] tracking-[0.25px]'>Beri tahu kami bantuan apa yang Anda butuhkan dan masalah yang perlu diselesaikan</p>
+                            </div>
+                            <div className='flex flex-col ml-8'>
+                                <label className='text-[12px] text-[#475467] tracking-[0.4px] leading-[18px] font-semibold'>Tuliskan detail permasalahan anda *</label>
+                                <textarea className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-4 resize-none" rows={7} placeholder='Tuliskan detail permasalahan anda' ></textarea>
                             </div>
                         </div>
-                        <div>
+                        <div className='ml-8 text-[12px] text-[#1D2939] tracking-[0.4px] leading-[18px] font-semibold'>
                             <p>Catatan:</p>
                             <ul className='list-disc ml-5'>
                                 <li>Konsultasi tidak dipungut biaya apapun/gratis.</li>
@@ -66,6 +93,12 @@ function ReservasiKonsultasi(){
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='flex justify-center mx-auto pt-8 pb-12'>
+                <div className='flex gap-4'>
+                    <button className='w-full flex justify-center bg-[#F2F4F7] text-[#667085] p-3 rounded-[8px] tracking-wide font-semibold cursor-pointer'>Cancel</button>
+                    <button className='w-full flex justify-center bg-[#3A57E8] text-white p-3 rounded-[8px] tracking-wide font-[500] cursor-pointer'>Simpan</button>
                 </div>
             </div>
         </div>
