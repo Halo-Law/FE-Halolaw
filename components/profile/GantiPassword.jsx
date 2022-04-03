@@ -1,41 +1,43 @@
 
 function GantiPassword(){
+    const email = 'testing@gmail.com'
     return(
-        <div>
-            <div className="grid grid-cols-2">
-                <div>
-                    <p>Ganti Password</p>
+        <div className="ml-[200px] mt-8 mb-12">
+            <div className="flex gap-20 border-b pb-10 mb-10">
+                <div className="w-[484px]">
+                    <p className="text-[#252A31] text-[23px] font-semibold leading-[32px] pb-2 mb-8">Ganti Password</p>
                     <div className="flex flex-col">
-                        <label>Email *</label>
-                        <input type="text" value="Email"/>
+                        <label className="text-sm font-medium text-gray-700 tracking-wide">Email <span className="text-[#C4351A]">*</span></label>
+                        <input type="email" className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-6" value={email} disabled/>
                     </div>
                     <div className="flex flex-col">
-                        <label>Password Lama *</label>
-                        <input type="text" value="Email"/>
+                        <label className="text-sm font-medium text-gray-700 tracking-wide">Password Lama <span className="text-[#C4351A]">*</span></label>
+                        <input className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-6" type="password" />
                     </div>
                     <div className="flex flex-col">
-                        <label>Password Baru *</label>
-                        <input type="text" value="Email"/>
+                        <label className="text-sm font-medium text-gray-700 tracking-wide">Password Baru <span className="text-[#C4351A]">*</span></label>
+                        <input className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-6" type="password" />
                     </div>
                     <div className="flex flex-col">
-                        <label>Konfirmasi Password Baru *</label>
-                        <input type="text" value="Email"/>
+                        <label className="text-sm font-medium text-gray-700 tracking-wide">Konfirmasi Password Baru <span className="text-[#C4351A]">*</span></label>
+                        <input className="w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#3A57E8] mt-2 mb-6" type="password" />
                     </div>
-                    <button>Ganti Password</button>
+                    <input type="submit" value="Ganti Password" className="w-full flex justify-center bg-[#3A57E8] text-gray-100 py-[10px] rounded-[8px] text-sm tracking-wide font-[500] cursor-pointer mt-2"/>
                 </div>
-                <div>
-                    <div>
-                        kotak
+                <div className="pt-16">
+                    <div className="p-4 w-[280px] border rounded">
+                        <img src="/concept-of-data-privacy-and-policy 1.svg"/>
+                        <p className="font-[400] text-[12px] leading-[18px] tracking-[0.4px] text-[#344054] mt-4">Demi keamanan dan kenyamanan dalam bertransaksi menggunakan layanan Halo Law, kami menyarankan Anda untuk melakukan perubahan kata sandi secara berkala</p>
                     </div>
                 </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex gap-12">
                 <div>
-                    <p>Hapus Akun</p>
-                    <p>Delete your account and account data</p>
+                    <p className="text-[19px] font-semibold text-[#344054] tracking-[0.15px] leading-[24px] pb-1">Hapus Akun</p>
+                    <p className="text-[14px] font-normal text-[#667085] tracking-[0.25px] leading-[20px]">Delete your account and account data</p>
                 </div>
                 <div>
-                    <button>Hapus</button>
+                    <button className="rounded-lg py-[10px] px-6 border text-[#840D0B] font-medium text-[14px] leading-[20px] tracking-[0.25px]">Hapus</button>
                 </div>
             </div>
         </div>

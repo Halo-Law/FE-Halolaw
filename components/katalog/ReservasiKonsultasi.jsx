@@ -59,8 +59,8 @@ function ReservasiKonsultasi(){
                                 <p className='text-[14px] font-semibold leading-[20px] tracking-[0.25px]'>Bidang mana yang perlu kami bantu? *</p>
                             </div>
                             <div className='flex flex-wrap gap-[16px] ml-8'>
-                                {bidang.map((data) => (
-                                    <div className='bg-[#F2F4F7] py-3 px-4 rounded-[4px] gap-[8px]'>
+                                {bidang.map((data, dataIdx) => (
+                                    <div key={dataIdx} className='bg-[#F2F4F7] py-3 px-4 rounded-[4px] gap-[8px]'>
                                         <input type="checkbox" className='mr-[8px]'/>
                                         <label>{data}</label>
                                     </div>
