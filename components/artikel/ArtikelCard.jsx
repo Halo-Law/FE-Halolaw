@@ -24,7 +24,7 @@ function ArtikelCard(props){
                                 if(data == "Pengadilan"){
                                     text_color = "text-[#C83491]";
                                 } else if (data == "Hak Cipta"){
-                                    text_color = "-text-[#724AB2]"
+                                    text_color = "text-[#724AB2]"
                                 } else if(data == "Perdata"){
                                     text_color = "text-[#6E9E31]"
                                 } else {
