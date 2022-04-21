@@ -153,8 +153,8 @@ export default function Checkout(){
                             <p>Rp 700.000</p>
                         </div>
                     </div>
-                    <div className='text-center bg-[#3A57E8]'>
-                        <button className='text-white text-[16px] font-[700] leading-[20px] tracking-[0.15px] py-6' onClick={() => {router.push('/CheckoutSucces')}}>
+                    <div className='text-center bg-[#3A57E8] cursor-pointer' onClick={() => {router.push('/CheckoutSucces')}}>
+                        <button className='text-white text-[16px] font-[700] leading-[20px] tracking-[0.15px] py-6'>
                             Checkout
                         </button>
                     </div>

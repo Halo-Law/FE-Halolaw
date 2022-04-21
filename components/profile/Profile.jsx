@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 function Profile(){
     return(
@@ -52,13 +53,15 @@ function Profile(){
                                 <input type="submit" value="Simpan Data Perubahan" className="w-full flex justify-center bg-[#3A57E8] text-gray-100 py-[10px] rounded-[8px] text-sm tracking-wide font-[500] cursor-pointer mt-12"/>
                             </div>
                         </div>
-                        <div className="flex p-4 gap-8">
+                        <Link href={'/editpassword'}>
+                        <div className="flex p-4 gap-8 cursor-pointer">
                             <img src="setting 1.svg"/>
                             <div>
                                 <p className="text-[19px] font-semibold text-[#344054] tracking-[0.15px] leading-[24px]">Pengaturan Akun</p>
                                 <p className="text-[14px] font-medium text-[#667085] tracking-[0.25px] leading-[20px]">Perbarui password dan hapus akun</p>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>

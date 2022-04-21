@@ -1,4 +1,5 @@
 import PrintIcon from '@mui/icons-material/Print';
+import Link from 'next/link';
 
 function CardTransaksi({props}){
     return (
@@ -31,10 +32,12 @@ function CardTransaksi({props}){
                 </div>
             </div>
             <div className='flex justify-end py-2 md:py-4 px-2 md:px-6 gap-4'>
-                <p className='self-center hover:underline cursor-pointer text-xs'><PrintIcon/> Invoice</p>
-                <button className={`${props.status.toLowerCase()   === "aktif" ? "bg-[#3A57E8] hover:bg-[#2c48cf] text-white" : "border bg-white text-[#3A57E8] hover:bg-[#2c48cf] hover:text-white"}  px-6 py-3 rounded-lg text-[16px] leading-[20px] tracking-[0.15px] text-xs`}>
-                    Update Progress
-                </button>
+                <p className='self-center hover:underline cursor-pointer text-xs lg:text-lg'><PrintIcon/> Invoice</p>
+                <Link href={'/DetailTransaksi'}>
+                    <button className={`${props.status.toLowerCase()   === "aktif" ? "bg-[#3A57E8] hover:bg-[#2c48cf] text-white" : "border bg-white text-[#3A57E8] hover:bg-[#2c48cf] hover:text-white"} px-6 py-3 rounded-lg`}>
+                        <span className='text-xs leading-[20px] tracking-[0.15px] lg:text-lg'>Update Progress</span>
+                    </button>
+                </Link>
             </div>
         </div>
         </>

@@ -91,7 +91,7 @@ function Navbar(){
                                 </Menu.Item>
                                 <Menu.Item>
                                 {({ active }) => ( login ? 
-                                    <a
+                                    <Link href={"/profile"}><a
                                     href="#"
                                     className={(
                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -99,13 +99,26 @@ function Navbar(){
                                     )}
                                     >
                                     Profil Saya
-                                    </a> : <a
-                                    href="#"
+                                    </a></Link> : <a
+                                    href=""
                                     className={(
                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                         'block px-4 py-1 lg:py-2 hover:text-blue-500'
                                     )}
                                     >Login</a>
+                                )}
+                                </Menu.Item>
+                                <Menu.Item>
+                                {({ active }) => ( login ? 
+                                    <Link href={"/DaftarTransaksi"}><a
+                                    href="#"
+                                    className={(
+                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                        'block px-4 py-1 lg:py-2 hover:text-blue-500'
+                                    )}
+                                    >
+                                    Daftar Transaksi
+                                    </a></Link> : <></>
                                 )}
                                 </Menu.Item>
                                 <Menu.Item>

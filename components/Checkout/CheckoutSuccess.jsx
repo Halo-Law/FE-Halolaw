@@ -2,6 +2,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function CheckoutSuccess(){
     
@@ -85,9 +86,11 @@ export default function CheckoutSuccess(){
                     : '' }
                 </div>
                 <div className='flex justify-between pt-8 pb-14 gap-8'>
-                    <button className='px-[16px] py-[12px] bg-[#F2F4F7] rounded-md w-full'>
-                        <span className='text-[14px] font-semibold leading-[20px]'>Kembali ke halaman utama</span>
-                    </button>
+                    <Link href={"/"}>
+                        <button className='px-[16px] py-[12px] bg-[#F2F4F7] rounded-md w-full'>
+                            <span className='text-[14px] font-semibold leading-[20px] cursor-pointer'>Kembali ke halaman utama</span>
+                        </button>
+                    </Link>
                     <button className='px-[16px] py-[12px] bg-[#3A57E8] rounded-md w-full text-white'>
                         <span className='text-[14px] font-semibold leading-[20px]'>Upload bukti / Cek status pembayaran</span>
                     </button>

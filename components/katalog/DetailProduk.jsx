@@ -1,5 +1,5 @@
 import HomeIcon from '@mui/icons-material/Home';
-import Link from 'next/link'
+import Link from "next/link"
 
 export default function DetailProduk() {
     const PageName = "Sertifikat Tanah"
@@ -67,7 +67,7 @@ export default function DetailProduk() {
                         </div>
                         <div className='space-y-[20px]'>
                             <p className='font-[500]'>Anda dapat melakukan konsultasi secara gratis sebelum memesan dokumen legalitas ini.</p>
-                            <p><a href='#' className='text-[#3A57E8] font-[600]'>Jadwalkan Kosultasi →</a></p>
+                            <Link href={"/ReservasiKonsultasi"}><p><a href='#' className='text-[#3A57E8] font-[600]'>Jadwalkan Kosultasi →</a></p></Link>
                             <p>Pesan sekarang untuk dapat mengurus dokumen legalitas ini.</p>
                         </div>
                         

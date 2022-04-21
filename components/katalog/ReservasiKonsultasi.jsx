@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Link from "next/link"
 
 function ReservasiKonsultasi(){
+    const router = useRouter()
     const bidang = ["Properti", "HAKI", "Pendirian Perusahaan", "Kontrak Kerja","Penutupan Perusahaan","Pembuatan & Perubahan akta","Perizinan Usaha"]
 
     return(
@@ -97,8 +98,8 @@ function ReservasiKonsultasi(){
             </div>
             <div className='flex justify-center mx-auto pt-8 pb-12'>
                 <div className='flex gap-4'>
-                    <button className='w-full flex justify-center bg-[#F2F4F7] text-[#667085] p-3 rounded-[8px] tracking-wide font-semibold cursor-pointer'>Cancel</button>
-                    <button className='w-full flex justify-center bg-[#3A57E8] text-white p-3 rounded-[8px] tracking-wide font-[500] cursor-pointer'>Simpan</button>
+                    <button className='w-full flex justify-center bg-[#F2F4F7] text-[#667085] p-3 rounded-[8px] tracking-wide font-semibold cursor-pointer' onClick={() => {router.back()}}>Cancel</button>
+                    <button className='w-full flex justify-center bg-[#3A57E8] text-white p-3 rounded-[8px] tracking-wide font-[500] cursor-pointer' onClick={() => {router.back()}}>Simpan</button>
                 </div>
             </div>
         </div>
